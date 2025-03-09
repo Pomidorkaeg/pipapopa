@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const scrollToTopBtn = document.getElementById('scrollToTopBtn');
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
+    const menuButton = document.querySelector('.menu-button');
+    const navButtons = document.querySelector('.nav-buttons');
   
     // Прокрутка вверх
     window.onscroll = () => {
@@ -10,22 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
   
     scrollToTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
   
-    // Открытие/закрытие меню
-    menuToggle.onclick = () => {
-      navMenu.classList.toggle('active');
+    // Открытие/закрытие кнопок по клику на кнопку с логотипом
+    menuButton.onclick = () => {
+      navButtons.classList.toggle('active');
     };
   
-    // Закрытие меню при клике вне его
+    // Закрытие кнопок при клике вне их
     window.onclick = (e) => {
-      if (!e.target.closest('.header') && navMenu.classList.contains('active')) {
-        navMenu.classList.remove('active');
+      if (!e.target.closest('.header') && navButtons.classList.contains('active')) {
+        navButtons.classList.remove('active');
       }
       if (e.target.classList.contains('modal-overlay')) closeModal();
     };
   
     document.getElementById('whyUsButton').onclick = () => {
       document.getElementById('why-us-section').scrollIntoView({ behavior: 'smooth' });
-      navMenu.classList.remove('active');
+      navButtons.classList.remove('active');
     };
   
     document.getElementById('downloadButton').onclick = () => {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.modal-overlay').style.display = 'block';
         setTimeout(() => document.querySelector('.modal-overlay').classList.add('active'), 10);
       }, 10);
-      navMenu.classList.remove('active');
+      navButtons.classList.remove('active');
     };
   
     const closeModal = () => {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('socialMediaButton').onclick = () => openModal('socialMediaModal');
     document.getElementById('videoInstructionButton').onclick = () => {
       window.open('https://youtu.be/5NHAoFDQQJY', '_blank');
-      navMenu.classList.remove('active');
+      navButtons.classList.remove('active');
     };
   
     document.querySelectorAll('.close').forEach(btn => btn.onclick = closeModal);
