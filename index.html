@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://apis.google.com;
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    img-src 'self' data: https://*.githubusercontent.com;
+    font-src 'self' https://fonts.gstatic.com;
+    connect-src 'self';
+    frame-ancestors 'none';
+    form-action 'self';
+    base-uri 'self';
+    object-src 'none';
+  ">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="Referrer-Policy" content="no-referrer">
+  <title>LuxVar</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="iconn.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="iconn.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="iconn.png">
+  <link rel="manifest" href="images/site.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="verify-admitad" content="cb2be38118" />
+</head>
+<body>
+  <div id="particles-js" class="particles"></div>
+
+  <header class="header">
+    <div class="logo">
+      <img src="iconn.png" alt="Логотип LuxVar" class="logo-img" loading="lazy">
+      LuxVar
+    </div>
+    <button class="nav-button" id="whyUsButton">Почему мы?</button>
+    <button class="nav-button" id="instructionButton">Инструкция</button>
+    <button class="nav-button" id="socialMediaButton">Социальные сети</button>
+    <button class="nav-button" id="videoInstructionButton">Видео инструкция</button>
+  </header>
+
+  <section class="section download-section">
+    <div class="luxvar-background">
+      <svg class="luxvar-text" viewBox="0 0 500 200" preserveAspectRatio="xMidYMid meet">
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="none" stroke="white" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+          LUXVAR
+        </text>
+      </svg>
+    </div>
+    <div class="content-container">
+      <h1 class="hero-title">LuxVar — Твой Ключ к Победам</h1>
+      <p class="hero-subtitle">Мощный инструмент для настоящих профи</p>
+      <div class="button-container">
+        <button class="download-button" id="downloadButton">Скачать Лоадер</button>
+        <button class="download-button secondary" id="openSiteButton">Скачать настройки</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us-section" id="why-us-section">
+    <div class="text-content">
+      <h2>Почему именно мы?</h2>
+      <div class="image-gallery">
+        <img src="cheat.jpg" alt="Фото 1" loading="lazy">
+        <img src="cheatss.jpg" alt="Фото 2" loading="lazy">
+      </div>
+      <div class="why-us-points">
+        <div class="why-us-point">
+          <h3>Бесплатный доступ</h3>
+          <p>Мы предлагаем бесплатный чит, который доступен каждому.</p>
+        </div>
+        <div class="why-us-point">
+          <h3>Надежность</h3>
+          <p>Наш чит работает стабильно и не вызывает подозрений у античитов.</p>
+        </div>
+        <div class="why-us-point">
+          <h3>Простота использования</h3>
+          <p>Интуитивно понятный интерфейс и подробная инструкция помогут вам быстро начать.</p>
+        </div>
+        <div class="why-us-point">
+          <h3>Поддержка</h3>
+          <p>Мы всегда готовы помочь вам в нашем Telegram-канале.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-overlay"></div>
+
+  <div id="instructionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h2>Инструкция по запуску чит-программы LuxVar</h2>
+      <ol>
+        <li>Отключаем антивирус.</li>
+        <li>Скачиваем архив, разархивируем и переносим все в одну папку на рабочий стол.</li>
+        <li>Запускаем Steam НЕ от имени администратора.</li>
+        <li>Запускаем cs2.</li>
+        <li>Запускаем инжектор</li>
+        <li>В открывшейся консоли нажимаем цифру 1 для инджекта, для выбора cs2 также нажимаем 1, после этих действий вводим luxvar.dll и нажимаем Enter</li>
+        <li>В cs2 нажимаем на клавиатуре Ins</li>
+      </ol>
+    </div>
+  </div>
+
+  <div id="socialMediaModal" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <h2>Социальные сети</h2>
+      <ul>
+        <li><a href="https://t.me/luxvarhacc" target="_blank" rel="noopener noreferrer">TG</a></li>
+        <li><a href="https://t.me/luxvarhacc" target="_blank" rel="noopener noreferrer">VK</a></li>
+        <li><a href="https://www.youtube.com/@LuxVarHac" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <button id="scrollToTopBtn" title="Наверх">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
